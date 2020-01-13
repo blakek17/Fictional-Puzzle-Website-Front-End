@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--[if lt IE 9]>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js">
+	</script>
+	<![endif]-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device width, initial-scale=1.0">
+	<link rel="stylesheet" href="puzzleSite.css" media="screen">
+	<!--[if lt IE 9]>
+   	 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" href="puzzleSitePrint.css" media="print">
+	<title>Sign In/Up</title>
+</head>
+
+<body><div id="wrapper">
+	<header>
+		<h1>Brain Marathon</h1>
+	</header>
+
+	<nav class="mainNav">
+		<a href="home.html">Home</a> &nbsp; 
+		<a href="aboutSignInOrUp.html">Sign In/Up</a> &nbsp; 
+		<a href="Sudoku Pages/sudoku.html">Sudoku</a> &nbsp; 
+		<a href="Crossword Pages/crossword.html">Crossword</a> &nbsp; 
+		<a href="Word Search Pages/wordSearch.html">Word Search</a> &nbsp; 
+		<a href="Other Puzzle Pages/otherPuzzles.html">Other Puzzles</a>
+	</nav>
+
+	<main>
+		<div class="leftColumn">
+		<nav>
+			<br><br>
+			<a href="aboutSignInOrUp.html">About Us</a>  <br><br><br>
+			<a href="signInOrUp.html">Sign In/Up</a> 			
+			
+		</nav>
+		</div>
+		
+		<div class="rightColumn">
+		<nav>
+			<p>*Payment options are presented upon application acceptance.</p> 
+			<p>**Moderators are given unlimited access given sufficient contribution to website causes. More details are
+				available upon application acceptance.</p>
+		</nav>
+		</div>
+
+	<div class="middleColumn">
+		<br>
+		<p>Sign in here if you are an existing member, or sign up here to become a member or moderator
+			today! See our "About" page for details on membership types and moderation.</p>
+		<h2>Sign In</h2> <br>
+		<form method="post" action="mailto:websitename@gmail.com" 
+		onsubmit="alert('Username and password not recognized for log-in.');">
+			<label for="existingUsername">Username:</label> 
+			<input type="text" name="existingUsername" id="existingUsername" required="required"> 
+			<label for="existingPassword">Password:</label> 
+			<input type="password" name="existingPassword" id="existingPassword" required="required"> <br><br>
+			<input type="submit" value="Submit" name="submit" id="signInSubmit">
+		</form> <br><hr class="middleColumn">
+
+		<h2>Sign Up to be a Member</h2> <br>
+		<form method="post" action="mailto:websitename@gmail.com" 
+		onsubmit="alert('Thank you, your form has been sent to us and will be reviewed soon!');">
+			Choose your membership type: <br>
+			<input type="radio" name="memberOptions" id="level1" value="level1">Level 1 <br>
+			<input type="radio" name="memberOptions" id="level2" value="level2">Level 2 <br>
+			<input type="radio" name="memberOptions" id="level3" value="level3">Level 3 <br>
+			<input type="radio" name="memberOptions" id="level4" value="level4">Level 4 <br><br>
+			<label for="memberFirstName">First Name:</label> 
+			<input type="text" name="memberFirstName" id="memberFirstName" required="required"> 
+			<label for="memberLastName">Last Name:</label>
+			<input type="text" name="memberLastName" id="memberLastName" required="required"> <br><br>
+			<label for="memberEmail">E-mail Address:</label>
+			<input type="text" name="memberEmail" id="memberEmail" required="required" class="newPageAfter"> <br><br>
+			<label for="chooseMemberUsername">Username:</label> 
+			<input type="text" name="chooseMemberUsername" id="chooseMemberUsername" required="required"> 
+			<label for="chooseMemberPassword">Password:</label> 
+			<input type="password" name="chooseMemberPassword" id="chooseMemberPassword" required="required"> <br><br>
+			<input type="submit" value="Submit" name="submit" id="signUpMemberSubmit">
+		</form> <br><hr class="middleColumn">
+
+		<h2>Sign Up to be a Moderator</h2> <br>
+		<form method="post" action="mailto:websitename@gmail.com"
+		onsubmit="alert('Thank you, your form has been sent to us and will be reviewed soon!');">
+			Briefly describe why you wish to be and should be a moderator: <br>
+			<textarea name="textbox" id="textbox" cols="30" rows="2" required="required"></textarea> <br><br>
+			<label for="modFirstName">First Name:</label> 
+			<input type="text" name="modFirstName" id="modFirstName" required="required"> 
+			<label for="modLastName">Last Name:</label>
+			<input type="text" name="modLastName" id="modLastName" required="required"> <br><br>
+			<label for="modEmail">E-mail Address:</label>
+			<input type="text" name="modEmail" id="modEmail" required="required"> <br><br>
+			<label for="chooseModUsername">Username:</label> 
+			<input type="text" name="chooseModUsername" id="chooseModUsername" required="required"> 
+			<label for="chooseModPassword">Password:</label> 
+			<input type="password" name="chooseModPassword" id="chooseModPassword" required="required"> <br><br>
+			<input type="submit" value="Submit" name="submit" id="signUpModSubmit">
+		</form>
+	</div>
+	</main>
+
+	<footer>
+		Copyright &copy; 2018 Brain Marathon <br>
+		<a href="mailto:brainmarathon@gmail.com">brainmarathon@gmail.com</a>
+	</footer>
+
+</div></body>
+
+</html>

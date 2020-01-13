@@ -1,0 +1,75 @@
+header, main { display: block; }
+* { box-sizing: border-box; }
+* { font-family: Verdana, Helvetica, sans-serif; }
+header { text-align: center; background-image: url(Images/mazeBanner.PNG); }
+body { margin: 0px 0px; background-image: linear-gradient(to bottom, #FFF, #000); height: 100%; }
+main { background-color: #EEF; margin: 0px; }
+footer { background-color: #DDD; font-style: italic; padding: 10px; margin: 0; }
+footer a { text-decoration: none; }
+
+h1 { margin: 0px 0px; line-height: 80px; color: #334; text-shadow: 3px 3px #CCC; }
+h2, h3 { margin: 1px 15px; color: #334; padding: 10px; }
+p { padding: 10px; }
+nav a { color: #FFF; background-image: linear-gradient(to top, #004, #AAF); 
+	border: 2px outset #FFF; text-decoration: none; }
+
+input { margin-right: 10px; margin-bottom: 10px;}
+img { margin-left: 30px; margin-right: 30px; }
+
+.homeImage { float: left; }
+.homeDiv { padding: 30px 20px; }
+.mainNav { width: 100%; text-align: center; background-image: linear-gradient(to top, #004, #EEF); }
+.mainNav a { padding: 10px; color: #FFF; background-image: linear-gradient(to top, #004, #EEF); }
+.mainNav a:hover { background-image: linear-gradient(to bottom, #004, #EEF); }
+
+.leftColumn { float: left; width: 15%; height:57vh; background-color: #334; 
+	 text-align: center; }
+.leftColumn a { padding: 10px; color: #FFF; background-image: linear-gradient(to top, #334, #DDF); text-decoration: none; }
+.leftColumn a:hover { background-image: linear-gradient(to bottom, #334, #EEF); }
+.rightColumn { float: right; width: 15%; height: auto; background-color: #334; color: #FFF; }
+.middleColumn { margin-left: auto; margin-right: auto; display: block; width: 70%; padding-left: 10px; }
+
+.floatLeft { float: left; }	
+.floatLeftClear { clear: left; }
+.floatRight { float: right; }
+.floatRightClear { clear: right; }
+.alignLeft { text-align: left; }
+.alignRight { text-align: right; }
+
+.button { border-radius: 10px; padding: 0.8em; text-align: center; text-decoration: none;
+	color: #FFF; background-image: linear-gradient(to top, #004, #EEF); }
+.button:hover { background-image: linear-gradient(to bottom, #004, #EEF); }
+
+.viewPuzzle { margin-left: auto; margin-right: auto; display: block; width: 60%; padding-top: 30px; padding-bottom: 30px;}
+.listHeading { font-weight: bold; color: #007; }
+
+.newPageAfter { page-break-after: always; }
+
+table { margin-left: auto; margin-right: auto; padding: 30px; margin-left: 20%; }
+td { padding: 15px; border: 1px solid #000; text-align: center; background-color: #FFF; }
+th { padding: 5px; border: 1px solid #000; background-color: #FFF; }
+
+#lockedPuzzleText { padding: 10px; margin-bottom: 10px; font-style: italic; font-weight: bold; }
+#wrapper { width: 70%; margin-right: auto; margin-left: auto; min-width: 700px; max-width: 1024px; }
+
+@media screen and (max-width: 1024px) {
+	body { margin: 0; padding: 0; background-image: none; }
+	#wrapper { width: auto; min-width: 0; margin: 0; }
+	table { margin-left: auto; margin-right: auto; }
+	.rightColumn { height: auto; }
+	input { display: block; margin-left: 0px; padding-left: 0px; }
+}
+
+@media all and (max-width: 768px) {
+	body { width: 100vw; }
+	nav a { display: block; margin: 0; }
+	div { display: block; width: 100vw; }
+	table { margin: 0; padding: 0px; }
+	p float { clear: left; clear: right; }
+	.leftColumn, .rightColumn { float: none; display: block; width: 100vw; height: auto; padding-top: 20px; padding-bottom: 5px; }
+	.leftColumn a { margin-bottom: 20px; }
+	.leftColumn br { display: none; }
+	.rightColumn br { display: none; }
+	.mainNav { margin: 0; }
+	.button { margin-left: 10px; margin-right: 10px; }	
+}

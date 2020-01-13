@@ -1,0 +1,74 @@
+header, main { display: block; }
+* { box-sizing: border-box; }
+* { font-family: Verdana, Helvetica, sans-serif; }
+header { text-align: center; }
+body { margin: 0px 0px; height: 100%; }
+main { background-color: #EEF; margin: 0px; }
+footer { background-color: #DDD; font-style: italic; padding: 10px; margin: 0; }
+footer a { text-decoration: none; }
+
+h1 { margin: 0px 0px; line-height: 80px; color: #334; text-shadow: 3px 3px #CCC; }
+h2, h3 { margin: 1px 15px; color: #334; padding: 10px; }
+p { padding: 10px; }
+nav a { color: #FFF; background-image: linear-gradient(to top, #004, #AAF);  
+	border: 2px outset #FFF; text-decoration: none; }
+
+input { display: block; margin-left: 0px; margin-right: 10px; padding-left: 0px; }
+img { margin-left: 30px; margin-right: 30px; }
+
+.mainNav { display: none; }
+.mainNav a { display: none; }
+.mainNav a:hover { background-image: linear-gradient(to bottom, #004, #EEF); }
+
+.leftColumn { display: none; float: none; }
+.leftColumn a { display: none; }
+.rightColumn { float: right; width: 15%; height: 70vh; }
+.middleColumn { margin-left: auto; margin-right: auto; display: block; width: 70%; padding-left: 10px; }
+
+.floatLeft { float: left; }	
+.floatLeftClear { clear: left; }
+.floatRight { float: right; }
+.floatRightClear { clear: right; }
+.alignLeft { text-align: left; }
+.alignRight { text-align: right; }
+
+.newPageAfter { page-break-after: always; }
+
+.button { border-radius: 10px; padding: 0.8em; text-align: center; text-decoration: none; }
+
+.viewPuzzle { margin-left: auto; margin-right: auto; display: block; width: 60%; padding-top: 30px; padding-bottom: 30px; }
+.listHeading { font-weight: bold; color: #007; }
+
+table { margin-left: auto; margin-right: auto; padding: 30px; margin-left: 20%; page-break-before: always; }
+td { padding: 15px; border: 1px solid #000; text-align: center; }
+th { padding: 5px; border: 1px solid #000; }
+
+#lockedPuzzleText { padding: 10px; margin-bottom: 10px; font-style: italic; font-weight: bold; }
+#wrapper { width: 70%; margin-right: auto; margin-left: auto; min-width: 700px; max-width: 1024px; }
+
+@media screen and (max-height: 1024px) {
+	.rightColumn { height: auto; }
+
+@media screen and (max-height: 600px) {
+	.leftColumn { height: 100vh; } 
+
+@media screen and (max-width: 1024px) {
+	body { margin: 0; padding: 0; background-image: none; }
+	#wrapper { width: auto; min-width: 0; margin: 0; }
+	table { margin-left: auto; margin-right: auto; }
+	.rightColumn { height: auto; }
+}	
+
+@media screen and (max-width: 700px) {
+	body { width: 100vw; }
+	nav a { display: block; margin: 0; }
+	div { display: block; width: 100vw; }
+	table { margin: 0; padding: 0px; }
+	p float { clear: left; clear: right; }
+	.leftColumn, .rightColumn { float: none; display: block; width: 100vw; height: auto; padding-top: 20px; padding-bottom: 5px; }
+	.leftColumn a { margin-bottom: 20px; }
+	.leftColumn br { display: none; }
+	.rightColumn br { display: none; }
+	.mainNav { margin: 0; }
+	.button { margin-left: 10px; margin-right: 10px; }	
+}
